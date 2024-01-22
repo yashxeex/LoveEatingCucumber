@@ -1,31 +1,40 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import base.BaseTest;
+import base.Utilities;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-    private WebDriver driver;
+public class LoginPage extends BaseTest {
 
-    public LoginPage(WebDriver driver) {
-        this.driver=driver;
+    @FindBy(id="username")
+    WebElement username;
+
+    @FindBy(id="password")
+    WebElement password;
+
+    @FindBy(id="signInBtn")
+    WebElement signInButton;
+
+    Utilities core=null;
+
+    public LoginPage() {
+        core=new Utilities(driver);
+        PageFactory.initElements(driver,this);
     }
-
-    By username = By.id("username");
-    By password = By.id("password");
-    By signInButton = By.id("signInBtn");
 
     public void openURL(String url) {
         driver.get(url);
     }
 
     public void enterUsername(String userID) {
-        driver.findElement(username).sendKeys(userID);
+        username.sendKeys(userID);
     }
     public void enterPassword(String pass) {
-        driver.findElement(password).sendKeys(pass);
+        password.sendKeys(pass);
     }
     public void clickOnSignIn() throws InterruptedException {
-        driver.findElement(signInButton).click();
-        Thread.sleep(10000);
+        signInButton.click();
     }
 }

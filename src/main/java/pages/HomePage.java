@@ -1,22 +1,29 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import base.BaseTest;
+import base.Utilities;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
-    private WebDriver driver;
-    public HomePage(WebDriver driver) {
-        this.driver=driver;
-    }
-    By headText = By.xpath("//a[text()='ProtoCommerce']");
-    By categoryOne = By.xpath("//a[contains(text(),'Category 1')]");
+public class HomePage extends BaseTest {
+    @FindBy(xpath = "//a[text()='ProtoCommerce']")
+    WebElement headText;
 
-    public String getHomePageTitle() throws InterruptedException {
-        Thread.sleep(5000);
-        return driver.findElement(headText).getText();
+    @FindBy(xpath = "//a[contains(text(),'Category 1')]")
+    WebElement categoryOne;
+
+    Utilities core=null;
+
+    public HomePage() {
+        core=new Utilities(driver);
+        PageFactory.initElements(driver,this);
     }
+
     public void clickOnCategoryOne() {
-        driver.findElement(categoryOne).click();
+        core.waitForElementVisibility(headText);
+        core.waitForElementVisibility(categoryOne);
+        categoryOne.click();
     }
 
 }
