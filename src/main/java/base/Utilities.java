@@ -13,7 +13,7 @@ public class Utilities extends BaseTest {
     }
 
     public WebDriverWait setExplicitWait() {
-        return new WebDriverWait(driver, Duration.ofSeconds(20));
+        return new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     public void waitForElementVisibility(WebElement element) {
