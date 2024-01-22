@@ -10,12 +10,11 @@ public class BaseTest {
 
     public static WebDriver driver;
 
-    public WebDriver init() {
+    public void init() {
         System.out.println("Setup Driver");
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        return driver;
     }
 
 }
