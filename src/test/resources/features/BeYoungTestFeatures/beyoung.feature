@@ -8,3 +8,5 @@ Feature: User catalogs Beyoung Website
       | majorOptions | subOptions       |
       | Men          | Plain T-Shirts   |
       | Men          | Printed T-Shirts |
+      | Men          | Activewear       |
+      | WOMEN        | Kurti            |
