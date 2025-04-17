@@ -22,6 +22,7 @@ public class Hooks extends BaseTest {
         driver.quit();
     }
     @AfterStep
+
     public void addScreenshot(Scenario scenario) {
         TakesScreenshot ts = (TakesScreenshot) driver;
         final byte[] screenShot = ts.getScreenshotAs(OutputType.BYTES);

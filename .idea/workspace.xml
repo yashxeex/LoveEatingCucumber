@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="672fda61-3238-46b9-a642-08ff239eeb1f" name="Changes" comment="cucumber adapter repor working code added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CareersPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/jobApplications.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/JobApplications/searchForJobs.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/Utilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/beyoung.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/BeYoungTestFeatures/beyoung.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/BeYoungTestFeatures/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/MySparkReport/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/MySparkReport/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded2.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded3.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded4.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
